@@ -7,8 +7,8 @@ Version:	0.28.3
 Release:	1
 License:	BSD and MIT
 Group:		Development/Tools
-Url:		https://github.com/jgm/cmark
-Source0:	https://github.com/jgm/cmark/archive/%{version}.tar.gz?/%{name}-%{version}.tar.gz
+Url:		https://github.com/commonmark/cmark
+Source0:	https://github.com/commonmark/cmark/archive/0.28.3/cmark-0.28.3.tar.gz
 BuildRequires:	cmake
 
 %description
