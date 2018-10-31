@@ -4,7 +4,7 @@
 Summary:	CommonMark parsing and rendering
 Name:		cmark
 Version:	0.28.3
-Release:	1
+Release:	2
 License:	BSD and MIT
 Group:		Development/Tools
 Url:		https://github.com/commonmark/cmark
