@@ -8,7 +8,7 @@ Release:	1
 License:	BSD and MIT
 Group:		Development/Tools
 Url:		https://github.com/commonmark/cmark
-Source0:	https://github.com/commonmark/cmark/archive/0.28.3/cmark-0.28.3.tar.gz
+Source0:	https://github.com/commonmark/cmark/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	cmake
 
 %description
