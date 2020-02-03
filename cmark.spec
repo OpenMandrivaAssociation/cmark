@@ -3,12 +3,12 @@
 
 Summary:	CommonMark parsing and rendering
 Name:		cmark
-Version:	0.28.3
-Release:	2
+Version:	0.29.0
+Release:	1
 License:	BSD and MIT
 Group:		Development/Tools
 Url:		https://github.com/commonmark/cmark
-Source0:	https://github.com/commonmark/cmark/archive/0.28.3/cmark-0.28.3.tar.gz
+Source0:	https://github.com/commonmark/cmark/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	cmake
 
 %description
@@ -67,10 +67,10 @@ This package provides the development files for cmark.
 %build
 %cmake \
 	-DCMARK_TESTS=OFF
-%make
+%make_build
 
 %install
-%makeinstall_std -C build
+%make_install -C build
 
 rm %{buildroot}%{_libdir}/libcmark.a
 
