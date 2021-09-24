@@ -3,7 +3,7 @@
 
 Summary:	CommonMark parsing and rendering
 Name:		cmark
-Version:	0.29.0
+Version:	0.30.2
 Release:	1
 License:	BSD and MIT
 Group:		Development/Tools
@@ -25,7 +25,7 @@ documents.
 %files
 %doc COPYING README.md
 %{_bindir}/cmark
-%{_mandir}/man1/cmark.1*
+%doc %{_mandir}/man1/cmark.1*
 
 #----------------------------------------------------------------------------
 
@@ -56,21 +56,22 @@ This package provides the development files for cmark.
 %{_includedir}/cmark_version.h
 %{_libdir}/libcmark.so
 %{_libdir}/pkgconfig/libcmark.pc
-%{_mandir}/man3/cmark.3*
-%{_libdir}/cmake/cmark*.cmake
+%doc %{_mandir}/man3/cmark.3*
+%dir %{_libdir}/cmake/cmark
+%{_libdir}/cmake/cmark/*.cmake
 
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %cmake \
 	-DCMARK_TESTS=OFF
+
 %make_build
 
 %install
 %make_install -C build
 
 rm %{buildroot}%{_libdir}/libcmark.a
-
