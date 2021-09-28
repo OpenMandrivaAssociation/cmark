@@ -4,7 +4,7 @@
 Summary:	CommonMark parsing and rendering
 Name:		cmark
 Version:	0.30.2
-Release:	1
+Release:	2
 License:	BSD and MIT
 Group:		Development/Tools
 Url:		https://github.com/commonmark/cmark
@@ -45,6 +45,7 @@ This package provides the cmark shared library.
 Summary:	Development files for cmark
 Group:		Development/Other
 Requires:	%{libname} = %{EVRD}
+Requires:	%{name} = %{EVRD}
 Provides:	%{name}-devel = %{EVRD}
 
 %description -n %{devname}
