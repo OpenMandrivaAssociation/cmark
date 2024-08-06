@@ -3,7 +3,7 @@
 
 Summary:	CommonMark parsing and rendering
 Name:		cmark
-Version:	0.31.0
+Version:	0.31.1
 Release:	1
 License:	BSD and MIT
 Group:		Development/Tools
